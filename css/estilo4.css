@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+body{
+    background-color: #fdfcff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236000f9' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+img{
+    width: 100%;
+}
+
+.encabezado{
+    height: 120px;
+    background-color: #03045E;
+    color: #00B4D8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.enc-tit{
+    font-size: 60px;
+    padding: 1% 0 1% 5%;
+    font-weight: 700;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    margin: 0 5%;
+}
+
+.menu{
+    width: 30%;
+    margin-right: 2%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #002B5B;
+}
+
+.menu li{
+    margin-inline: 4%;
+    list-style: none;
+}
+
+.menu li a{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    text-decoration: none;
+    color: #00B4D8;
+    font-weight: 600;
+    margin-block-start: 3%;
+}
+
+.menu li a:hover{
+    color: white;
+}
+
+.menu-tit{
+    width: 100%;
+    background-color: white;
+    font-size: 70px;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0 3% 0;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-top: 130px;
+}
+
+.division{
+    width: 15%;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: 2% 0 0 0;
+}
+
+.contenido article{
+    border: 1px solid #002B5B;
+    border-radius: 5px;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+}
+
+.d1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.d1,.d2,.d3{
+    background-color: #03045E;
+    color: white;
+}
+
+.d2{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.d3{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.d4{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.d5{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.d6{
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.d4,.d5,.d6{
+    background-color: #00B4D8;
+}
+
+.d7{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.d8{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.d9{
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.d7,.d8,.d9{
+    background-color: #90E0EF;
+}
+
+.d10{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.d11{
+    grid-column-start: 2;
+    grid-row-start: 7;
+}
+
+.d12{
+    grid-column-start: 2;
+    grid-row-start: 8;
+}
+
+.d10,.d11,.d12{
+    background-color: #CAF0F8;
+}
+
+.d13{
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.d14{
+    grid-column-start: 1;
+    grid-row-start: 7;
+}
+
+.d15{
+    grid-column-start: 1;
+    grid-row-start: 8;
+}
+
+.d13,.d14,.d15{
+    background-color: #002B5B;
+    color: white;
+}
+
+.d16{
+    grid-column-start: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.d17{
+    grid-column-start: 3;
+    grid-row-start: 7;
+}
+
+.d18{
+    grid-column-start: 3;
+    grid-row-start: 8;
+}
+
+.d16,.d17,.d18{
+    background-color: #2B4865;
+    color: white;
+}
+
+.d19{
+    grid-column-start: 2;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+.d20{
+    grid-column-start: 2;
+    grid-row-start: 11;
+}
+
+.d19,.d20{
+    background-color: #8FE3CF;
+}
+
+footer{
+    background-color: #03045E;
+    color: #00B4D8;
+    text-align: center;
+    padding: 3%;
+}
+
+.footer-text{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+@media (max-width: 1200px){
+    .contenido{
+        margin-top: 7%;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-tit{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background-color: #002B5B;
+        top: 120px;
+        width: 100%;
+        height: calc(100% - 120px);
+    }
+
+    .menu li {
+        margin: 5%;
+        font-size: 25px;
+    }
+}

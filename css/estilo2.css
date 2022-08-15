@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+img{
+    width: 100%;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03045E;
+    color: #00B4D8;
+    width: 100%;
+}
+
+.enc-tit{
+    padding: 1% 0 1% 5%;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.toggle{
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+    width: 33%;
+    margin-right: 5%;
+}
+
+.menu li{
+    display: inline;
+    margin-inline: 3%;
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #00B4D8;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 800;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 2%;
+}
+
+.division{
+    width: 15%;
+    margin-bottom: 2%;
+}
+
+.contenido{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 3%;
+}
+
+.contenido article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-radius: 5px;
+}
+
+.d1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #03045E;
+}
+
+.d2{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #03045E;
+    color: white;
+}
+
+.d3{
+    background-color: #03045E;
+    color: white;
+}
+
+.d4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #00B4D8;
+}
+
+.d5{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: #00B4D8;
+}
+
+.d6{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    background-color: #00B4D8;
+}
+
+.d7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: #90E0EF;
+}
+
+.d8{
+    background-color: #90E0EF;
+}
+
+.d9{
+    background-color: #90E0EF;
+}
+
+.d10{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    background-color: #CAF0F8;
+}
+
+.d11{
+    background-color: #CAF0F8;
+}
+
+.d12{
+    background-color: #CAF0F8;
+}
+
+.d13{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    background-color: #90E0EF;
+}
+
+.d14{
+    background-color: #90E0EF;
+}
+
+.d15{
+    background-color: #90E0EF;
+}
+
+.d16{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 13;
+    background-color: #00B4D8;
+}
+
+.d17{
+    background-color: #00B4D8;
+}
+
+.d18{
+    background-color: #00B4D8;
+}
+
+.d19{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #03045E;
+}
+
+.d20{
+    background-color: #03045E;
+    color: white;
+}
+
+footer{
+    background-color: #03045E;
+    color: #00B4D8;
+    text-align: center;
+    padding: 3%;
+}
+
+.footer-text{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+@media (max-width: 480px) {
+    img{
+        width: 100%;
+    }
+
+    .encabezado{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 5%;
+    }
+    
+    .menu{
+        background-color: #03045E;
+        position: fixed;
+        margin-top: 88px;
+        height: 30vh;
+        top: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .menu li{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        top: 0;
+        margin-block: 5%;
+    }
+    
+    .menu li a{
+        font-size: 25px;
+    }
+    
+    .general{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo{
+        margin-top: 100px;
+    }
+    
+    .division{
+        width: 40%;
+        margin-bottom: 2%;
+    }
+    
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 5%;
+    }
+
+    .contenido article{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .footer-text{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .encabezado{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 5%;
+    }
+    
+    .menu{
+        background-color: #03045E;
+        position: fixed;
+        margin-top: 88px;
+        height: 40vh;
+        top: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .menu li{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        top: 0;
+        margin-block: 5%;
+    }
+    
+    .menu li a{
+        font-size: 25px;
+    }
+    
+    .general{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo{
+        margin-top: 100px;
+    }
+    
+    .division{
+        width: 40%;
+        margin-bottom: 2%;
+    }
+    
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 5%;
+    }
+
+    .contenido article{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .encabezado{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .toggle{
+        display: block;
+        margin-right: 5%;
+    }
+    
+    .menu{
+        background-color: #03045E;
+        position: fixed;
+        margin-top: 88px;
+        height: 50vh;
+        top: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .menu li{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        top: 0;
+        margin-block: 5%;
+    }
+    
+    .menu li a{
+        font-size: 25px;
+    }
+    
+    .general{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo{
+        margin-top: 170px;
+    }
+    
+    .division{
+        width: 20%;
+        margin-bottom: 2%;
+    }
+    
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .menu{
+        display: block !important;
+    }
+}
+/* font-family: 'IBM Plex Sans', sans-serif; */

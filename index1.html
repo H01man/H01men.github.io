@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo1.css">
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/81e3463f73.js" crossorigin="anonymous"></script>
+
+    <title>Turismmo</title>
+</head>
+<body>
+    <nav class="encabezado">
+        <span class="enc-tit">
+            Turismo
+        </span>
+
+        <div class="hide">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index2.html">Maquetacion 2</a></li>
+            <li><a href="index3.html">Maquetacion 3</a></li>
+            <li><a href="index4.html">Maquetacion 4</a></li>
+            <li><a href="index5.html">Maquetacion 5</a></li>
+        </ul>
+    </nav>
+
+    <div class="titulo">
+        <h1>
+            Italia
+        </h1>
+
+        <hr class="division">
+    </div>
+
+    <div class="caja-conte">
+        <div class="contenido">
+            <div class="d1">
+                <img src="img/italia1(coliseo).jpg" width="100%" alt="imagen">
+            </div>
+            <div class="d2">
+                La torre de Pisa o torre inclinada de Pisa es la torre campanario de la catedral de Pisa, situada en la plaza del Duomo de Pisa, en la ciudad del mismo nombre, municipio de la región italiana de la Toscana y capital de la provincia homónima de Italia.
+            </div>
+            <div class="d3">
+                <img src="img/italia2(venecia).jpg" width="100%" alt="">
+            </div>
+            <div class="d4">
+                El Gran Canal es el mayor canal de la ciudad de Venecia, la mayor zona húmeda de este país gracias a los múltiples canales de distinta longitud y anchura que lo riegan, en Italia. Este recorre Venecia trazando una S y le sigue en tamaño e importancia el canal Regio o Cannaregio.
+            </div>
+            <div class="d5">
+                <img src="img/italia3(torre de pisa).jpg" width="100%" alt="imgen2">
+            </div>
+            <div class="d6">
+                <img src="img/italia4(catedral de milan).jpg" width="100%" alt="imagen3">
+            </div>
+            <div class="d7">
+                <img src="img/italia5(capilla sixtina).jpg" width="100%" alt="">
+            </div>
+            <div class="d8">
+                <img src="img/italia6(catedral de florencia).jpg" width="100%" alt="">
+            </div>
+            <div class="d9">
+                El Coliseo o Anfiteatro Flavio ​ es un anfiteatro de la época del Imperio romano, construido en el siglo I. Está ubicado en el este del Foro Romano, y fue el más grande de los que se construyeron en el Imperio romano.
+            </div>
+            <div class="d10">
+                <img src="img/italia7(panteon roma).jpg" width="100%" alt="">
+            </div>
+            <div class="d11">
+                El Panteón de Agripa o Panteón de Roma es un antiguo templo romano —en la actualidad una iglesia—, situado en la ciudad de Roma, en el lugar de un anterior templo encargado por Marco Agripa durante el gobierno de Augusto. Fue terminado por orden del emperador Adriano y dedicado alrededor del año 126.
+            </div>
+            <div class="d12">
+                <img src="img/italia8(torre de giotto).jpg" width="100%" alt="">
+            </div>
+            <div class="d13">
+                La catedral de Milán es una catedral gótica emplazada en la ciudad homónima. Es la sede episcopal de la Archidiócesis de Milán. Es una de las iglesias de culto católico más grandes del mundo, tiene 157 metros de largo pudiendo albergar hasta 40,000 personas en su interior.
+            </div>
+            <div class="d14">
+                La basílica catedral metropolitana de Santa Maria del Fiore, o catedral de Santa María de la Flor, es la sede episcopal de la arquidiócesis de Florencia, Italia. Es una de las obras maestras del arte gótico y del primer Renacimiento italiano.
+            </div>
+            <div class="d15">
+                La Capilla Sixtina es una capilla del Palacio Apostólico de la Ciudad del Vaticano, la residencia oficial del papa. Se trata de la estancia más conocida del conjunto palaciego. Originalmente servía como capilla de la fortaleza vaticana.
+            </div>
+            <div class="d16">
+                El campanario o campanile de Giotto es la torre campanario de la iglesia Santa María del Fiore, catedral de Florencia, situada en la plaza del Duomo.
+            </div>
+            <div class="d17">
+                <img src="img/italia9(ca´dóro).jpg" width="100%" alt="">
+            </div>
+            <div class="d18">
+                La Ca' d'Oro es un notable edificio de Venecia, situado en el sestiere de Cannaregio, junto al Gran Canal. Actualmente es sede del museo de arte "Giorgio Franchetti".
+            </div>
+            <div class="d19">
+                <img src="img/italia9(palacio real milan).jpg" width="100%" alt="">
+            </div>
+            <div class="d20">
+                El Palazzo Reale o Palacio Real de Milán fue por muchos siglos sede del gobierno de la ciudad de Milán, residencia de regentes y es actualmente un importante centro cultural, sede de muestras y exposiciones.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-text">
+            ¡Disfruta de lo mejor!
+        </span>
+    </footer>
+
+    <!--jQuery-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.menu').show()
+
+        $('.hide').on('click', function(){
+            $('.menu').toggle('slow')
+            return($('.menu'))
+        })
+
+    </script>
+</body>
+</html>
